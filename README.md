@@ -8,14 +8,14 @@ THE FRONT-END APPLICATION RUN ON PORT 4200
 
 ## Getting Started
 First, cd to (store-backend):
-    - install dependencies.
-    - setup .env file
-    - create the realted databases.
-    - run migrations.
-    - create the products needed to be shown in the store.
+    * install dependencies.
+    * setup .env file
+    * create the realted databases.
+    * run migrations.
+    * create the products needed to be shown in the store.
 Then cd to (store-frontend):
-    - install dependencies.
-    - run (ng serve)
+    * install dependencies.
+    * run (ng serve)
 
 ### store-backend
 
@@ -66,7 +66,7 @@ Then cd to (store-frontend):
     Using (postman) go the route:
     ( /products/new-product ) [POST] like the follwing image:
 
-    ![Alt text](../assets/creating-product.png"how to add new product..")
+![Alt text](assets/creating-product.png"how to add new product..")
 
 #### Tables in databaase:
 there are 4 tables:
