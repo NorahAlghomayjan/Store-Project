@@ -1,0 +1,12 @@
+<div class="container cart-item col row m-2" *ngFor="let item of items">
+    <div class="col">
+        <img src="{{item.url}}" alt="">
+    </div>
+    <div class="cart-item-details col">
+        <h5>{{item.name}}</h5>
+        <p> {{item.price}}</p>
+        <input type="number" name="amount" value="{{item.amount}}" max="10" min="0"[(ngModel)]="item.amount" (change)="changeTotal(item.item_id,item.amount)">
+        
+    </div>
+</div>
+<h4 class="total">Total: {{total}} SR</h4>

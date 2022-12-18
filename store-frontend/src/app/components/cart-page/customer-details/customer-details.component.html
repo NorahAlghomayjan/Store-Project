@@ -1,0 +1,53 @@
+<form #form="ngForm" class="m-2" (ngSubmit)="setUser(userChild)">
+    <div class="form-group mb-2">
+        <label>First Name</label>
+        <input #firstName="ngModel" required minlength="3" maxlength="6" type="text" class="form-control"
+            placeholder="(minimum 3 characters)" [(ngModel)]="userChild.firstname" name="firstname">
+
+        </div>
+        <div class="form-group mb-2">
+            <label>Last Name</label>
+            <input  #lastName="ngModel" required minlength="3" maxlength="6" type="text" class="form-control"
+            placeholder="(minimum 3 characters)" [(ngModel)]="userChild.lastname" name="lastname">
+        </div>
+        <div class="errors" *ngIf="firstName.invalid && lastName.dirty">
+            <div *ngIf="firstName.errors || lastName.errors">
+                Please provide a First Name & Last Name it should be at least 3 characters.
+            </div>
+        </div>
+    <div class="form-group mb-2">
+        <label>Email</label>
+        <input required type="email" class="form-control"
+            placeholder="(user@email.com)" [(ngModel)]="userChild.email" name="email">
+        <small class="form-text text-muted note">this is default email created for you, CHANGE it or KEEP it.</small>
+    </div>
+    <div class="form-group  mb-2">
+        <label>Password</label>
+        <input #pass="ngModel" required minlength="4" maxlength="8" type="password" class="form-control" placeholder="(4-8 charachters)" [(ngModel)]="userChild.password" name="password">
+        <div class="errors" *ngIf="pass.invalid && pass.dirty">
+            <div *ngIf="pass.errors">
+                password should be from 4-8 charachters.
+            </div>
+        </div>
+    </div>
+    <div class="form-group  mb-2">
+        <label>Address</label>
+        <input #addrs="ngModel" required minlength="6" type="text" class="form-control" placeholder="(minimum 6 charachters)" [(ngModel)]="userChild.address" name="address">
+        <div class="errors" *ngIf="addrs.invalid && addrs.dirty">
+            <div *ngIf="addrs.errors">
+                password should be minimum 6 charachters.
+            </div>
+        </div>
+    </div>
+    <div class="form-group mb-2">
+        <label>Credit Card</label>
+        <input #credit="ngModel" required minlength="16" type="text" class="form-control" placeholder="(16-digit number)" [(ngModel)]="userChild.creditCard" name="creditCard">
+        <div class="errors" *ngIf="credit.invalid && credit.dirty">
+            <div *ngIf="credit.errors">
+                password should be minimum 16 charachters.
+            </div>
+        </div>
+    </div>
+    
+    <button type="submit" class="mt-2 btn btn-primary" [disabled]='form.invalid'>Submit</button>
+</form>

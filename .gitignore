@@ -1,0 +1,49 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+store-frontend/node_modules
+store-frontend/npm-debug.log
+store-frontend/yarn-error.log
+
+# IDEs and editors
+store-frontend/.idea/
+store-frontend/.project
+store-frontend/.classpath
+store-frontend/.c9/
+store-frontend/*.launch
+store-frontend/.settings/
+store-frontend/*.sublime-workspace
+
+# Visual Studio Code
+store-frontend/.vscode/*
+!store-frontend/.vscode/settings.json
+!store-frontend/.vscode/tasks.json
+!store-frontend/.vscode/launch.json
+!store-frontend/.vscode/extensions.json
+store-frontend/.history/*
+
+# Miscellaneous
+store-frontend/.angular/cache
+store-frontend/.sass-cache/
+store-frontend/connect.lock
+store-frontend/coverage
+store-frontend/libpeerconnection.log
+store-frontend/testem.log
+store-frontend/typings
+
+# System files
+store-frontend/.DS_Store
+store-frontend/Thumbs.db
+
+Creating-API-with-postgres/node_modules
+Creating-API-with-postgres/Creating-API-with-postgres/.env
+Creating-API-with-postgres/package-lock.json
+
+Creating-API-with-postgres/node_modules
+Creating-API-with-postgres/build

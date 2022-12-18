@@ -1,0 +1,21 @@
+
+<div class="card mb-3 text m-auto" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{product.url}}" alt="{{product.name}}" class="img-fluid rounded-start" (click)="viewDetails(product.id)" />
+        </div>
+        <div class="col-md-8">
+            <div class="card-body m-2">
+                <h4 class="card-text">{{product.name}}</h4>
+                <p class="card-text">{{product.price}} SR</p>
+                <p class="card-text" *ngIf="details">{{product.description}}</p>
+                <form action="" (ngSubmit)="addToCart(product)">
+                    <input type="number" name="amount" value="1" class="m-2" [(ngModel)]="amount">
+                    <br>
+                    <input type="submit" value="Add to Cart" class="btn btn-primary  m-2">
+                </form>
+                <a routerLink="/"  *ngIf="details">  go back to product-list</a>
+            </div>
+        </div>
+    </div>
+</div>

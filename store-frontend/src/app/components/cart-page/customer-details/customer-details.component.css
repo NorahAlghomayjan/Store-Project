@@ -1,0 +1,7 @@
+.errors{
+    color: red;
+}
+.note {
+    color: rgb(4, 132, 137) !important;
+    font-weight: bolder;
+}

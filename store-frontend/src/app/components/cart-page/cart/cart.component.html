@@ -1,0 +1,5 @@
+
+<div class="container row m-auto">
+    <app-order class="col" [items]="items" [total]="total" (changeTotalChild)="changeTotal($event)" (removeItemChild)="removeItem($event)"></app-order>
+    <app-customer-details class="col"[userChild]="user" (setUserEvent)="setUser($event)"></app-customer-details>
+</div>
