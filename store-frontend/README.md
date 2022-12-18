@@ -1,8 +1,10 @@
 # Getting Stareted:
-1. cd to Creating-API-with-postgres
-1. To run front-end, products need to be created using (postman) with the route:
+ To run front-end, products need to be created.
+1. cd to store-backend.
+2. Using (postman) go the route:
  ( /products/new-product ) [POST] like the follwing image:
-![Alt text](assets/creating-product.png "how to add new product..")
+
+![Alt text](../assets/creating-product.png"how to add new product..")
 
 2. cd to store-fontend, and run:
     ng serve.

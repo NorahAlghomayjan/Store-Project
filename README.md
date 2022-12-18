@@ -1,11 +1,16 @@
 # Creating-API-with-postgres
 
-# Storefront Backend Project
-
-## Getting Started
 THE DATABASE IS RUNNING ON PORT 5432
 THE BACK-END APPLICATION RUN ON PORT 3000
 THE FRONT-END APPLICATION RUN ON PORT 4200
+# Storefront Backend Project
+
+## Getting Started
+First, cd to (store-backend) and create the realted databases, setup .env file, install dependencies and run migrations, create the products needed to be shown in the store.
+Then cd to (store-frontend) and install dependencies and run (ng serve)
+
+### store-backend
+
 
 1. run the following command to install all dependencies:
     ```npm i```
@@ -48,22 +53,29 @@ THE FRONT-END APPLICATION RUN ON PORT 4200
 5. to run in dev mode:
     ```ENV=dev npm run watch```
 
-## Tables in databaase:
+6.To run front-end, products need to be created.
+    cd to store-backend.
+    Using (postman) go the route:
+    ( /products/new-product ) [POST] like the follwing image:
+
+    ![Alt text](../assets/creating-product.png"how to add new product..")
+
+#### Tables in databaase:
 there are 4 tables:
 
-### users
+##### users
     id
     firstname
     lastname
     password
     email (should be unique)
 
-### orders
+##### orders
     id
     status
     user_id
 
-### products
+##### products
     id
     description
     name
@@ -72,17 +84,27 @@ there are 4 tables:
     user_id
     url
 
-### orders_products
+##### orders_products
     id
     quantity
     order_id
     product_id
 
-## Routes needed to run front-end (Without Auth):
+
+### store-fontend
+
+1. cd to store-fontend.
+2. install dependencies:
+```
+    npm i
+``` 
+3. run the application:
+    ng serve.
+#### Routes needed to run front-end (Without Auth):
 
 start by creating products using (postman) using the follwing route:
 
-### products Route:
+##### products Route:
 
 - Create [authentication required] 
     ( /products/new-product ) [POST]
