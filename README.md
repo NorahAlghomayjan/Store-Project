@@ -65,7 +65,8 @@ Then cd to (store-frontend):
 6. To run front-end, products need to be created.
     Using (postman) go the route:
     ( /products/new-product ) [POST] like the follwing image:
-![Alt text](assets/creating-product.png"how to add new product..")
+    
+![Alt text](assets/creating-product.png "how to add body to create new product")
 
 #### Tables in databaase:
 there are 4 tables:
@@ -107,13 +108,14 @@ there are 4 tables:
 ``` 
 3. run the application:
     ng serve.
+    
 #### Routes needed to run front-end (Without Auth):
 
 start by creating products using (postman) using the follwing route:
 
 ##### products Route:
 
-- Create [authentication required] 
+- Create products usingg postman with the following route:
     ( /products/new-product ) [POST]
 
 ![Alt text](assets/creating-product.png "how to add body to create new product")
