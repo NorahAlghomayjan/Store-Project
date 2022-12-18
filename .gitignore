@@ -47,14 +47,3 @@ Creating-API-with-postgres/package-lock.json
 
 Creating-API-with-postgres/node_modules
 Creating-API-with-postgres/build
-
-## Routes needed to run front-end (Without Auth):
-
-start by creating products using (postman) using the follwing route:
-
-### products Route:
-
-- Create [authentication required] 
-    ( /products/new-product ) [POST]
-
-![Alt text](assets/creating-product.png "how to add new product..")
