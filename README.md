@@ -109,4 +109,4 @@ start by creating products using (postman) using the follwing route:
 - Create [authentication required] 
     ( /products/new-product ) [POST]
 
-![Alt text](assets/creating-product.png "how to add new product..")
+![Alt text](assets/creating-product.png "how to add body to create new product")
