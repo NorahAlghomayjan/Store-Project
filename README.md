@@ -1,13 +1,21 @@
-# Creating-API-with-postgres
+# Storefront & Backend Project
 
+```
 THE DATABASE IS RUNNING ON PORT 5432
 THE BACK-END APPLICATION RUN ON PORT 3000
 THE FRONT-END APPLICATION RUN ON PORT 4200
-# Storefront Backend Project
+```
 
 ## Getting Started
-First, cd to (store-backend) and create the realted databases, setup .env file, install dependencies and run migrations, create the products needed to be shown in the store.
-Then cd to (store-frontend) and install dependencies and run (ng serve)
+First, cd to (store-backend):
+    - install dependencies.
+    - setup .env file
+    - create the realted databases.
+    - run migrations.
+    - create the products needed to be shown in the store.
+Then cd to (store-frontend):
+    - install dependencies.
+    - run (ng serve)
 
 ### store-backend
 
