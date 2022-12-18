@@ -107,6 +107,12 @@ started with (/products).
 
 - Show  
     ' /products/:id ' [GET]
+    
+    
+- new-product:
+    ( /products/new-product ) [POST]
+
+![Alt text](../assets/creating-product.png "how to add body to create new product")
 
 - Create [authentication required] 
     ( /products/new ) [POST]
