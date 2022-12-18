@@ -8,16 +8,17 @@ THE FRONT-END APPLICATION RUN ON PORT 4200
 
 ## Getting Started
 First, cd to (store-backend):
-    * install dependencies.
-    * setup .env file
-    * create the realted databases.
-    * run migrations.
-    * create the products needed to be shown in the store.
+- install dependencies.
+- setup .env file
+- create the realted databases.
+- run migrations.
+- create the products needed to be shown in the store.
+    
 Then cd to (store-frontend):
-    * install dependencies.
-    * run (ng serve)
+- install dependencies.
+- run (ng serve)
 
-### store-backend
+## store-backend
 
 
 1. run the following command to install all dependencies:
@@ -61,11 +62,9 @@ Then cd to (store-frontend):
 5. to run in dev mode:
     ```ENV=dev npm run watch```
 
-6.To run front-end, products need to be created.
-    cd to store-backend.
+6. To run front-end, products need to be created.
     Using (postman) go the route:
     ( /products/new-product ) [POST] like the follwing image:
-
 ![Alt text](assets/creating-product.png"how to add new product..")
 
 #### Tables in databaase:
@@ -99,7 +98,7 @@ there are 4 tables:
     product_id
 
 
-### store-fontend
+## store-fontend
 
 1. cd to store-fontend.
 2. install dependencies:
