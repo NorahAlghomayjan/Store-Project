@@ -1,5 +1,30 @@
 # Storefront & Backend Project
 
+## Description
+
+This is online store to sell products.
+
+#### - The Main Page [http://localhost:4200/]:
+
+Shows a list of products to sell, user can click button (add to cart) to add thee chosen product to cart.
+
+#### - The Details Page [http://localhost:4200/:id]:
+
+Show the product details and an option to add product to cart.
+
+#### - The Cart Page [http://localhost:4200/cart]:
+
+Shows the products the user have choosen, user can (increase , decrese the quantity of products to order OR delete) and the total is calculated immediately , and can procceed to checkout by filling th form on the right side and clicking (submit).
+
+
+#### - The Checkout Page [http://localhost:4200/checkout]:
+
+Print the order details (username , total , status), and show the estemated delivery.
+
+
+
+
+
 ```
 THE DATABASE IS RUNNING ON PORT 5432
 THE BACK-END APPLICATION RUN ON PORT 3000
@@ -99,7 +124,7 @@ there are 4 tables:
     product_id
 
 
-## store-fontend
+## store-frontend
 
 1. cd to store-fontend.
 2. install dependencies:
@@ -107,8 +132,9 @@ there are 4 tables:
     npm i
 ``` 
 3. run the application:
+ ```
     ng serve.
-    
+ ``` 
 #### Routes needed to run front-end (Without Auth):
 
 start by creating products using (postman) using the follwing route:
