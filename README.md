@@ -20,7 +20,7 @@ Show the product details and an option to add product to cart.
 
 Shows the products the user have choosen, user can (increase , decrese the quantity of products to order OR delete) and the total is calculated immediately , and can procceed to checkout by filling th form on the right side and clicking (submit).
 
-![Alt text](assets/Cart-page2.png "cart-page")
+![Alt text](assets/Cart.png "cart-page")
 
 
 #### - The Checkout Page [http://localhost:4200/checkout]:
