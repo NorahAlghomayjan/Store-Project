@@ -69,7 +69,9 @@ Then cd to (store-frontend):
 - install dependencies.
 - run (ng serve)
 
-## store-backend
+# Steps In Details:
+
+## FIRST: store-backend
 
 
 1. run the following command to install all dependencies:
@@ -150,7 +152,7 @@ there are 4 tables:
     product_id
 
 
-## store-frontend
+## SECOND: store-frontend
 
 1. cd to store-fontend.
 2. install dependencies:
