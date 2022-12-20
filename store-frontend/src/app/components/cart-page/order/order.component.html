@@ -5,7 +5,8 @@
     <div class="cart-item-details col">
         <h5>{{item.name}}</h5>
         <p> {{item.price}}</p>
-        <input type="number" name="amount" value="{{item.amount}}" max="10" min="0"[(ngModel)]="item.amount" (change)="changeTotal(item.item_id,item.amount)">
+        <input type="number" name="amount" value="{{item.amount}}" max="10" min="0"[(ngModel)]="item.amount" (ngModelChange)="changeTotal(item.item_id,item.amount)">
+        <input class="text-danger" type="submit" value="remove item" (click)="changeTotal(item.item_id,0)">
         
     </div>
 </div>

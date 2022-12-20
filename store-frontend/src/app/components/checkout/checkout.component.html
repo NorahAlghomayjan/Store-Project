@@ -1,4 +1,4 @@
-<div class="container text-center">
+<div class="container text-center" *ngIf="total!=0">
     <h1 class="text-success">SUCCESS</h1>
     <h5 class="m-4">
         Thank you, {{name}} !
@@ -8,6 +8,17 @@
     </h5 >
     <h5 class="m-4">
         pleaase allow 2-3 business days, for shipping  !
+    </h5>
+    <a routerLink="/" class="btn btn-primary"> back  to product-list</a>
+</div>
+
+<div class="container text-center" *ngIf="total==0">
+    <h1 class="text-warning">FAILED</h1>
+    <h5 class="m-4">
+        No Order Placed Yet.
+    </h5>
+    <h5 class="m-4">
+        Please, Go Back and Shop and Make Sure To Add Products to Your Cart  !
     </h5>
     <a routerLink="/" class="btn btn-primary"> back  to product-list</a>
 </div>

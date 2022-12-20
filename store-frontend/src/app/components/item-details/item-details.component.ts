@@ -24,9 +24,9 @@ export class ItemDetailsComponent implements OnInit {
         private route: ActivatedRoute,
         private router: Router
     ) {
-        const id = 0;
+
         this.product = {
-            id: 1,
+            id: 0,
             name: '',
             price: 0.0,
             url: '',
@@ -38,12 +38,14 @@ export class ItemDetailsComponent implements OnInit {
 
     ngOnInit(): void {
         let id: number = 0;
-        this.route.paramMap.subscribe((params: ParamMap) => {
-            id = parseInt(params.get('id') as string);
-        });
-        this.productServ.getProductById(id).subscribe((res) => {
-            this.product = res;
-        });
+        if (this.details) {
+            this.route.paramMap.subscribe((params: ParamMap) => {
+                id = parseInt(params.get('id') as string);
+            });
+            this.productServ.getProductById(id).subscribe((res) => {
+                this.product = res;
+            });
+        }
     }
 
     addToCart(product: Product) {

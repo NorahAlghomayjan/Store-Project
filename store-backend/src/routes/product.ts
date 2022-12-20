@@ -17,6 +17,7 @@ const product_routes = (app: express.Application): void => {
     app.post('/products/new-product', createProduct);
     app.put('/products/update/:id', authorizationProduct, updateProductById);
     app.delete('/products/delete/:id', authorizationProduct, deleteProduct);
+    app.delete('/products/delete-prodduct/:id', deleteProduct);
 };
 
 export default product_routes;

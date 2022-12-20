@@ -26,9 +26,10 @@ export class CustomerDetailsComponent implements OnInit {
         creditCard: '',
     };
     @Output() setUserEvent: EventEmitter<User> = new EventEmitter();
+    creditValid = true;
 
     /* --------------------- */
-    constructor(private router: Router, private cartServ: CartService) {}
+    constructor(private router: Router, private cartServ: CartService) { }
 
     ngOnInit(): void {
         this.userChild.password = '';
@@ -36,5 +37,12 @@ export class CustomerDetailsComponent implements OnInit {
 
     setUser(user: User) {
         this.setUserEvent.emit(user);
+    }
+
+    numberOnly() {
+        if (! /^[0-9]+$/.test(this.userChild.creditCard)) {
+            this.creditValid = false
+        }
+
     }
 }

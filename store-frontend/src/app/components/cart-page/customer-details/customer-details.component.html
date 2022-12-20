@@ -35,19 +35,19 @@
         <input #addrs="ngModel" required minlength="6" type="text" class="form-control" placeholder="(minimum 6 charachters)" [(ngModel)]="userChild.address" name="address">
         <div class="errors" *ngIf="addrs.invalid && addrs.dirty">
             <div *ngIf="addrs.errors">
-                password should be minimum 6 charachters.
+                address should be minimum 6 charachters.
             </div>
         </div>
     </div>
     <div class="form-group mb-2">
         <label>Credit Card</label>
-        <input #credit="ngModel" required minlength="16" type="text" class="form-control" placeholder="(16-digit number)" [(ngModel)]="userChild.creditCard" name="creditCard">
-        <div class="errors" *ngIf="credit.invalid && credit.dirty">
-            <div *ngIf="credit.errors">
-                password should be minimum 16 charachters.
+        <input #credit="ngModel" type="text" required minlength="16" maxlength="16"  class="form-control" placeholder="(16-digit number)" [(ngModel)]="userChild.creditCard" name="creditCard" (ngModelChange)="numberOnly()">
+        <div class="errors" *ngIf="!creditValid || (credit.invalid && credit.dirty) ">
+            <div>
+                credit should be NUMBERS ONLY & should be minimum 16 numbers.
             </div>
         </div>
     </div>
     
-    <button type="submit" class="mt-2 btn btn-primary" [disabled]='form.invalid'>Submit</button>
+    <button type="submit" class="mt-2 btn btn-primary" [disabled]='form.invalid && creditValid'>Submit</button>
 </form>

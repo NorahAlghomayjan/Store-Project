@@ -29,7 +29,7 @@ export class CartComponent implements OnInit {
         private router: Router,
         private cartServ: CartService,
         private userServ: UserService
-    ) {}
+    ) { }
 
     ngOnInit(): void {
         // 1 return user from localStorage.
@@ -57,10 +57,10 @@ export class CartComponent implements OnInit {
 
                         this.total = totalArr.length
                             ? Math.round(
-                                  totalArr.reduce(
-                                      (accum, next) => accum + next
-                                  ) * 100
-                              ) / 100
+                                totalArr.reduce(
+                                    (accum, next) => accum + next
+                                ) * 100
+                            ) / 100
                             : 0.0;
 
                         this.cartServ.setTotal(this.total);
@@ -97,6 +97,7 @@ export class CartComponent implements OnInit {
             .changeQuantity(itemAndAmount.itemId, itemAndAmount.amount)
             .subscribe((res) => {
                 this.updatingTotal();
+                alert(`Cart Changed item id ${itemAndAmount.itemId} amount to ${itemAndAmount.amount}`)
             });
     }
 
@@ -110,6 +111,7 @@ export class CartComponent implements OnInit {
                 (item) => item.item_id != deletedItems[0].id
             );
             this.updatingTotal();
+            alert(`Cart Changed item id ${itemId} is removed from cart`)
         });
     }
 
@@ -119,7 +121,7 @@ export class CartComponent implements OnInit {
         );
         this.total = totalArr.length
             ? Math.floor(totalArr.reduce((accum, next) => accum + next) * 100) /
-              100
+            100
             : 0.0;
         this.cartServ.setTotal(this.total);
     }

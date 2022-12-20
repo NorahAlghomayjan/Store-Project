@@ -10,5 +10,6 @@ var product_routes = function (app) {
     app.post('/products/new-product', product_1.createProduct);
     app.put('/products/update/:id', store_1.authorizationProduct, product_1.updateProductById);
     app["delete"]('/products/delete/:id', store_1.authorizationProduct, product_1.deleteProduct);
+    app["delete"]('/products/delete-prodduct/:id', product_1.deleteProduct);
 };
 exports["default"] = product_routes;

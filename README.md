@@ -4,23 +4,47 @@
 
 This is online store to sell products.
 
-#### - The Main Page [http://localhost:4200/]:
+#### - The Home Page [http://localhost:4200/]:
 
-Shows a list of products to sell, user can click button (add to cart) to add thee chosen product to cart.
+Shows a list of products to sell, user can click button (add to cart) to add the chosen product to cart.
+![Alt text](assets/Home-page.png "home-page")
 
-#### - The Details Page [http://localhost:4200/:id]:
+#### - The Details Page [http://localhost:4200/product/:id]:
 
 Show the product details and an option to add product to cart.
+
+![Alt text](assets/Details-page.png "details-page")
 
 #### - The Cart Page [http://localhost:4200/cart]:
 
 Shows the products the user have choosen, user can (increase , decrese the quantity of products to order OR delete) and the total is calculated immediately , and can procceed to checkout by filling th form on the right side and clicking (submit).
+
+![Alt text](assets/Cart-page.png "cart-page")
 
 
 #### - The Checkout Page [http://localhost:4200/checkout]:
 
 Print the order details (username , total , status), and show the estemated delivery.
 
+![Alt text](assets/Checkout-page.png "checkout-page")
+
+
+## Basic Functions:
+#### - display products:
+in the home-page where all available products are listed [ http://localhost:4200/ ]
+
+#### - add product to cart:
+user can add product to cart through:
+- home-page [ http://localhost:4200/ ]
+- details-page [ http://localhost:4200/product/:id ]
+
+#### - View Order:
+user can view the order with the selected items in cart-page:
+- cart-page [http://localhost:4200/cart ]
+
+#### - Place order & proceed to checkout:
+user can place an order with the selected items, by filling the form and clicking submit:
+- cart-page [http://localhost:4200/cart ]
 
 
 
