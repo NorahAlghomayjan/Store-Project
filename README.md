@@ -7,6 +7,7 @@ This is online store to sell products.
 #### - The Home Page [http://localhost:4200/]:
 
 Shows a list of products to sell, user can click button (add to cart) to add the chosen product to cart.
+
 ![Alt text](assets/Home-page.png "home-page")
 
 #### - The Details Page [http://localhost:4200/product/:id]:
@@ -30,24 +31,25 @@ Print the order details (username , total , status), and show the estemated deli
 
 
 ## Basic Functions:
-#### - display products:
+#### - Display products:
 in the home-page where all available products are listed [ http://localhost:4200/ ]
 
-#### - add product to cart:
+#### - Add product to cart:
 user can add product to cart through:
 - home-page [ http://localhost:4200/ ]
 - details-page [ http://localhost:4200/product/:id ]
 
 #### - View Order:
 user can view the order with the selected items in cart-page:
-- cart-page [http://localhost:4200/cart ]
+- cart-page [ http://localhost:4200/cart ]
 
 #### - Place order & proceed to checkout:
 user can place an order with the selected items, by filling the form and clicking submit:
-- cart-page [http://localhost:4200/cart ]
+- cart-page [ http://localhost:4200/cart ]
 
 
 
+## GONFIG :
 
 ```
 THE DATABASE IS RUNNING ON PORT 5432
