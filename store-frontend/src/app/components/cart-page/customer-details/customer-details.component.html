@@ -10,7 +10,7 @@
             <input  #lastName="ngModel" required minlength="3" maxlength="6" type="text" class="form-control"
             placeholder="(minimum 3 characters)" [(ngModel)]="userChild.lastname" name="lastname">
         </div>
-        <div class="errors" *ngIf="firstName.invalid && lastName.dirty">
+        <div class="errors" *ngIf="(firstName.invalid && firstName.dirty) || (lastName.invalid && lastName.dirty)">
             <div *ngIf="firstName.errors || lastName.errors">
                 Please provide a First Name & Last Name it should be at least 3 characters.
             </div>

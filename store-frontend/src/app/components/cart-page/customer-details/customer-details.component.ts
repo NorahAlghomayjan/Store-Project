@@ -41,7 +41,9 @@ export class CustomerDetailsComponent implements OnInit {
 
     numberOnly() {
         if (! /^[0-9]+$/.test(this.userChild.creditCard)) {
-            this.creditValid = false
+            this.creditValid = false;
+        } else{
+            this.creditValid = true;
         }
 
     }
