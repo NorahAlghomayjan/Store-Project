@@ -41,6 +41,8 @@ store-frontend/typings
 store-frontend/.DS_Store
 store-frontend/Thumbs.db
 
+store-backend/.env
+
 Creating-API-with-postgres/node_modules
 Creating-API-with-postgres/Creating-API-with-postgres/.env
 Creating-API-with-postgres/package-lock.json
